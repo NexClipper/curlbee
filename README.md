@@ -20,10 +20,10 @@ response:
       value:
         ok: true
         exists:
-          - "cluster.list"
+          - "$Res.clusters.list"
     return:
       ok: true
-      list: "cluster.list"
+      list: "$Res.clusters.list"
 ```
 
 The instruction above will call 
