@@ -1,4 +1,4 @@
-# CoolBee
+# CurllBee
 Calling APIs with a YAML instruction.
 
 ## Example
@@ -35,13 +35,13 @@ with a header X-Auth-Token: {{env.OPEN_STACK_TOKEN}} where the value is from an 
 
 ## In Command Line
 ```
-$ coolbee cluster.yaml
+$ curlbee cluster.yaml
 ```
 
 ## As a Service
 ```
 # running it on port 3001
-$ coolbee start -p 3001
+$ curlbee start -p 3001
 
 # pass yaml to the api
 POST localhost:3000/call 
