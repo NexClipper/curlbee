@@ -1,2 +1,4 @@
-# coolbee
+# CoolBee
 HTTP client using YAML
+
+## 
