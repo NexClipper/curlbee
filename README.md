@@ -20,7 +20,7 @@ response:
       value:
         ok: true
         exists:
-	  - "cluster.list"
+          - "cluster.list"
     return:
       ok: true
       list: "cluster.list"
