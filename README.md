@@ -1,4 +1,4 @@
-# CurllBee
+# CurlBee
 Calling APIs with a YAML instruction.
 
 ## Example
