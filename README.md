@@ -5,25 +5,25 @@ Calling APIs with a YAML instruction.
 
 ```yaml
 call:
-	clusters: 
-		method: "get"
-		url: 	"10.30.35.23/clusters"
-		query:
-			  page: 1
-	  	  	  limit: 3
-		headers:
-			- name: "X-Auth-Token"
-			  value: "{{env.OPEN_STACK_TOKEN}}"
+  clusters: 
+    method: "get"
+    url: "10.30.35.23/clusters"
+    query:
+      page: 1
+      limit: 3
+    headers:
+      - name: "X-Auth-Token"
+        value: "{{env.OPEN_STACK_TOKEN}}"
 response:
-	- if:
-	  	status: 200
-		value:
-			ok: true
-		exists:
-			- "cluster.list"
-	  return:
-		ok: true
-		list: "cluster.list"
+  - if:
+      status: 200
+      value:
+        ok: true
+        exists:
+	  - "cluster.list"
+    return:
+      ok: true
+      list: "cluster.list"
 ```
 
 The instruction above will call 
