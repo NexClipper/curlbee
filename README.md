@@ -31,3 +31,21 @@ The instruction above will call
 GET 10.30.35.23/clusters?page=1&limit=3
 ```
 with a header X-Auth-Token: {{env.OPEN_STACK_TOKEN}} where the value is from an environment variable OPEN_STACK_TOKEN.
+
+
+## In Command Line
+```
+$ coolbee cluster.yaml
+```
+
+## As a Service
+```
+# running it on port 3001
+$ coolbee start -p 3001
+
+# pass yaml to the api
+POST localhost:3000/call 
+```
+
+
+
