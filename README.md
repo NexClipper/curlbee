@@ -1,7 +1,10 @@
 # CurlBee
 Calling APIs with a YAML instruction.
 
-## Example
+## Bee Charts
+The YAML files instruction for calling API and templating the result is called a bee chart.
+
+### Example
 
 ```yaml
 call:
