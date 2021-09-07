@@ -1,0 +1,8 @@
+- name: "clusters"
+  request:
+    method: "get"
+    url: "https://manager.io:8090/inner/groups"
+- name: "cluster detail"
+  request:
+    method: "get"
+    url: "https://manager.io:8090/inner/groups/960"

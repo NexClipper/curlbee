@@ -1,0 +1,12 @@
+- name: "clusters"
+  request:
+    method: "get"
+    url: "https://manager.io:8090/inner/groups"
+- name: "cluster detail"
+  request:
+    method: "get"
+    url: "http://10.30.35.23/clusters/123"
+    headers:
+      - key: "X-Auth-Token"
+        value: "afkdj309jflakfe9"
+    
