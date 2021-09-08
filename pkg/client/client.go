@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/nexclipper/CurlBee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/policy"
 )
 
 func Request(p *policy.BeePolicy, name *string, body *string) error {

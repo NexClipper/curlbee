@@ -7,8 +7,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/nexclipper/CurlBee/cmd"
-	"github.com/nexclipper/CurlBee/pkg/policy"
+	"github.com/nexclipper/curlbee/cmd"
+	"github.com/nexclipper/curlbee/pkg/policy"
 )
 
 func main() {

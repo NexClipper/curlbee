@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/nexclipper/CurlBee/pkg/client"
-	"github.com/nexclipper/CurlBee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/client"
+	"github.com/nexclipper/curlbee/pkg/policy"
 )
 
 type CLIBee struct {

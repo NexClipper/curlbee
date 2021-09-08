@@ -1,4 +1,4 @@
-# CurlBee
+# curlbee
 Calling APIs with a YAML instruction.
 
 ## Bee Charts

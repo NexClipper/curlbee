@@ -1,4 +1,4 @@
-module github.com/nexclipper/CurlBee
+module github.com/nexclipper/curlbee
 
 go 1.16
 

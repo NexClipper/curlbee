@@ -3,14 +3,14 @@ package cmd
 import (
 	"strings"
 
-	"github.com/nexclipper/CurlBee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/policy"
 )
 
-type CurlBee interface {
+type curlbee interface {
 	Run(cfg []policy.BeePolicy) error
 }
 
-func NewBee(execType string) CurlBee {
+func NewBee(execType string) curlbee {
 	execType = strings.ToUpper(execType)
 
 	if execType == "HTTP" {

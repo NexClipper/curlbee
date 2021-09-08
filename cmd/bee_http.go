@@ -10,7 +10,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 
-	"github.com/nexclipper/CurlBee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/policy"
 )
 
 type HttpBee struct {
