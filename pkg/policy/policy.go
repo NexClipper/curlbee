@@ -3,6 +3,7 @@ package policy
 import (
 	"fmt"
 	"log"
+	"os"
 	"regexp"
 	"strings"
 )
@@ -131,7 +132,7 @@ func (b *BeePolicy) matching(v string, p map[string]string) (string, error) {
 		paramType := strings.ToUpper(splits[0])
 		paramKey := strings.ToUpper(splits[1])
 		if paramType == "ENV" {
-			fmt.Println(paramKey)
+			paramValue = os.Getenv(paramKey)
 		} else if paramType == "PARAM" {
 			paramValue = p[paramKey]
 		} else {

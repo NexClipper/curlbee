@@ -9,4 +9,4 @@
 - name: "cluster detail-2"
   request:
     method: "get"
-    url: "https://{{param.MANAGER}}:8090/inner/groups/{{param.ZONE_ID}}"
+    url: "https://{{param.MANAGER}}:8090/inner/groups/{{env.ZONE_ID}}"
