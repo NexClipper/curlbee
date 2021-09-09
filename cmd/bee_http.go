@@ -15,6 +15,7 @@ import (
 
 type HttpBee struct {
 	handler *BeeHandler
+	params  string
 }
 
 func (c *HttpBee) Run(cfg []policy.BeePolicy) error {

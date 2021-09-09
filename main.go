@@ -14,10 +14,12 @@ import (
 func main() {
 	fileName := flag.String("filename", "", "yaml file name")
 	execType := flag.String("type", "cli", "specifies the type of execution process[cli(default)|http]")
+	param := flag.String("param", "", "parameters can be transferred")
 	flag.Parse()
 
 	//*fileName = "./example/policy2.yml"
 	//fmt.Println(*fileName)
+	//fmt.Println(*param)
 	yamlBuf, err := ioutil.ReadFile(*fileName)
 	if err != nil {
 		panic(err)
@@ -29,7 +31,7 @@ func main() {
 		panic(err)
 	}
 
-	bee := cmd.NewBee(*execType)
+	bee := cmd.NewBee(*execType, *param)
 	if bee != nil {
 		err := bee.Run(cfg)
 		if err != nil {

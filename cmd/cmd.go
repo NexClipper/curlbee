@@ -10,13 +10,13 @@ type curlbee interface {
 	Run(cfg []policy.BeePolicy) error
 }
 
-func NewBee(execType string) curlbee {
+func NewBee(execType, param string) curlbee {
 	execType = strings.ToUpper(execType)
 
 	if execType == "HTTP" {
-		return &HttpBee{handler: &BeeHandler{}}
+		return &HttpBee{handler: &BeeHandler{}, params: param}
 	} else if execType == "CLI" {
-		return &CLIBee{}
+		return &CLIBee{params: param}
 	}
 
 	return nil

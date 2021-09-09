@@ -1,0 +1,12 @@
+- name: "clusters"
+  request:
+    method: "get"
+    url: "https://{{param.MANAGER}}:8090/inner/groups"
+- name: "cluster detail-1"
+  request:
+    method: "get"
+    url: "https://{{param.MANAGER}}:8090/inner/groups/{{param.GROUP_ID}}"
+- name: "cluster detail-2"
+  request:
+    method: "get"
+    url: "https://{{param.MANAGER}}:8090/inner/groups/{{param.ZONE_ID}}"
