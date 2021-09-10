@@ -1,4 +1,4 @@
-package policy
+package config
 
 import (
 	"fmt"
@@ -8,8 +8,14 @@ import (
 	"strings"
 )
 
+type BeeConfig struct {
+	Title    string      `yaml:"title"`
+	Port     uint32      `yaml:"port"`
+	Policies []BeePolicy `yaml:"policies`
+}
+
 type BeePolicy struct {
-	Name    string     `yaml: "name"`
+	Name    string     `yaml:"name"`
 	Request BeeRequest `yaml:"request"`
 }
 

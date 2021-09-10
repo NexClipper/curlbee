@@ -8,7 +8,7 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/nexclipper/curlbee/cmd"
-	"github.com/nexclipper/curlbee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/config"
 )
 
 func main() {
@@ -17,7 +17,8 @@ func main() {
 	param := flag.String("param", "", "parameters can be transferred")
 	flag.Parse()
 
-	//*fileName = "./example/policy2.yml"
+	//*execType = "http"
+	//*fileName = "./example/policy4.yml"
 	//fmt.Println(*fileName)
 	//fmt.Println(*param)
 	yamlBuf, err := ioutil.ReadFile(*fileName)
@@ -25,8 +26,8 @@ func main() {
 		panic(err)
 	}
 
-	cfg := make([]policy.BeePolicy, 0)
-	err = yaml.Unmarshal(yamlBuf, &cfg)
+	cfg := &config.BeeConfig{}
+	err = yaml.Unmarshal(yamlBuf, cfg)
 	if err != nil {
 		panic(err)
 	}

@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/nexclipper/curlbee/pkg/policy"
+	"github.com/nexclipper/curlbee/pkg/config"
 )
 
-func Request(p *policy.BeePolicy, name *string, body *string) error {
+func Request(p *config.BeePolicy, name *string, body *string) error {
 	method := p.Request.Method
 	method = strings.ToUpper(method)
 	//if !(method == "GET" || method == "POST" || method == "DELETE" || method == "PUT") {
